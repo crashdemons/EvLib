@@ -986,7 +986,7 @@ implements NavigableMap<K, C>, Cloneable, java.io.Serializable
 	 *             and this map uses natural ordering, or its comparator
 	 *             does not permit null keys
 	 */
-	public C put(K key, X value){
+	public C putTree(K key, X value){
 		Entry<K, C, X> t = root;
 		if(t == null){
 			compare(key, key); // type (and possibly null) check

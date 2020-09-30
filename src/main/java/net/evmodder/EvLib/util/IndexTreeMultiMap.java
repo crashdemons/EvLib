@@ -1012,7 +1012,7 @@ implements NavigableMap<K, Collection<X>>, Cloneable, java.io.Serializable
 	 *             and this map uses natural ordering, or its comparator
 	 *             does not permit null keys
 	 */
-	public Collection<X> put(K key, X value){
+	public Collection<X> putTree(K key, X value){
 		Entry<K, X> t = root;
 		if(t == null){
 			compare(key, key); // type (and possibly null) check
